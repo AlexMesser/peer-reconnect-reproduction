@@ -1,0 +1,35 @@
+{
+  "name": "peer-reconnect-reproduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "alice": "./node_modules/.bin/tsc && node _/alice.js ",
+    "bob": "./node_modules/.bin/tsc && node _/bob.js",
+    "relay": "./node_modules/.bin/tsc && node _/relay.js"
+  },
+  "keywords": [],
+  "type": "module",
+  "dependencies": {
+    "@chainsafe/libp2p-gossipsub": "^5.2.1",
+    "@libp2p/interface-connection": "^3.0.3",
+    "@libp2p/interface-peer-id": "^1.0.6",
+    "@libp2p/interface-pubsub": "^3.0.1",
+    "@libp2p/pubsub-peer-discovery": "^7.0.0",
+    "@libp2p/interfaces": "^3.0.4",
+    "@libp2p/crypto": "^1.0.7",
+    "@libp2p/mplex": "^7.0.0",
+    "@libp2p/tcp": "^6.0.0",
+    "@libp2p/peer-id": "^1.1.16",
+    "@libp2p/websockets": "^5.0.0",
+    "@chainsafe/libp2p-noise": "^10.0.1",
+    "@multiformats/multiaddr": "^11.0.7",
+    "libp2p": "^0.40.0",
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.10"
+  },
+  "author": "",
+  "license": "ISC"
+}
